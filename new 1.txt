@@ -1,0 +1,13 @@
+				Prime Faces
+1.What is primefaces? Host can you get primeface jar file to work with jsp?
+2.What is primefaces repository Confiq? page 8
+3.What is primefaces dependency artifect?
+4.When will you use the fillowing jar file?
+		jsf, primefaces,itext, apache POI, commons_io
+5.Primedeaces provides PPR explain.
+6.What do the following keywords?
+	@this, @parent,@Form, @none, @all
+7.What is i18 an L10n?What are differents between i18 and L10n?
+8.Primedeaces implements own 7 headRounderses which are those?
+
+
