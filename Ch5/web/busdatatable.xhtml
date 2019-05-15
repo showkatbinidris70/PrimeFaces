@@ -36,18 +36,24 @@
                         </p:submenu>
 
                     </p:menu>
-                </p:layoutUnit> 
+                </p:layoutUnit>
 
                 <p:layoutUnit position="center">
-                    <h:form>
-                        <p:dashboard>
-                            <p:panel id="panel1" header="#{dashboardController.dashboard.dashboardTitle}">
-                                <p:panelGrid columns="3">
-                                    <h:outputText value="#{dashboardController.dashboard.lastMonthSales}" />
-                                </p:panelGrid>
-                            </p:panel>
-                        </p:dashboard>
-                    </h:form>
+
+                    <p:dataTable var="bus" value="#{busController.busList}">
+                        <p:column headerText="Id">
+                            <h:outputText value="#{bus.id}"/>
+                        </p:column>
+                        <p:column headerText="Year">
+                            <h:outputText value="#{bus.year}"/>
+                        </p:column>
+                        <p:column headerText="Brand">
+                            <h:outputText value="#{bus.brand}"/>
+                        </p:column>
+                        <p:column headerText="Color">
+                            <h:outputText value="#{bus.color}"/>
+                        </p:column>
+                    </p:dataTable>
                 </p:layoutUnit>
 
             </p:layout>
