@@ -39,21 +39,67 @@
                 </p:layoutUnit>
 
                 <p:layoutUnit position="center">
+                    <form id="form">
+                        <p:dataTable var="bus" value="#{busController.busList}">
+                            <p:column headerText="Id">
+                                <h:outputText value="#{bus.id}"/>
+                            </p:column>
+                            <p:column headerText="Year">
+                                <h:outputText value="#{bus.year}"/>
+                            </p:column>
+                            <p:column headerText="Brand">
+                                <h:outputText value="#{bus.brand}"/>
+                            </p:column>
+                            <p:column headerText="Color">
+                                <h:outputText value="#{bus.color}"/>
+                            </p:column>
+<!--                            <p:column style="width: 32px; text-align: center">
+                                <p:commandButton update=":form:busDetails" oncomplete="PF('busDialog').show()" icon="pi pi-search" title="view">
+                                    <f:setPropertyActionListener value="#{bus}" target="#{busController.selectedBus}"/>
+                                </p:commandButton>
+                            </p:column>-->
+                        </p:dataTable>
+                        <p:dialog header="Bust info" widgetVar="busDialog" modal="true" showEffect="fade" hideEffect="fade" resizable="false">
+                            <p:outputPanel id="busDetails" style="text-align: center">
+                                <p:panelGrid columns="2" rendered="#{not empty busController.busList}" columnClasses="label, value">
+                                    <h:outputText value="id"/>
+                                    <h:outputText value="#{busController.selectedBus.id}"/>
 
-                    <p:dataTable var="bus" value="#{busController.busList}">
-                        <p:column headerText="Id">
-                            <h:outputText value="#{bus.id}"/>
-                        </p:column>
-                        <p:column headerText="Year">
-                            <h:outputText value="#{bus.year}"/>
-                        </p:column>
-                        <p:column headerText="Brand">
-                            <h:outputText value="#{bus.brand}"/>
-                        </p:column>
-                        <p:column headerText="Color">
-                            <h:outputText value="#{bus.color}"/>
-                        </p:column>
-                    </p:dataTable>
+                                    <h:outputText value="Year"/>
+                                    <h:outputText value="#{busController.selectedBus.year}"/>
+
+                                    <h:outputText value="Brand"/>
+                                    <h:outputText value="#{busController.selectedBus.brand}"/>
+
+                                    <h:outputText value="Color"/>
+                                    <h:outputText value="#{busController.selectedBus.color}"/>
+                                </p:panelGrid>
+                            </p:outputPanel>
+                        </p:dialog>
+
+                        <p:dataTable id="radioDT" var="bus" value="#{busController.busList}" selection="#{busController.selectedBus}" rowKey="#{bus.id}">
+                            <f:facet name="header">
+                                RadioButton
+                            </f:facet>
+                            <p:column selectionMode="single" style="width: 16px;text-align: center"/>
+                            <p:column headerText="Id">
+                                <h:outputText value="#{bus.id}"/>
+                            </p:column>
+                            <p:column headerText="Year">
+                                <h:outputText value="#{bus.year}"/>
+                            </p:column>
+                            <p:column headerText="Brand">
+                                <h:outputText value="#{bus.brand}"/>
+                            </p:column>
+                            <p:column headerText="Color">
+                                <h:outputText value="#{bus.color}"/>
+                            </p:column>
+<!--                            <f:facet name="footer">
+                                <p:commandButton process="radionDT" update=":form:busDetails" icon="pi pi-search" value="View" oncomplete="PF('busDialog').show()"/>
+                            </f:facet>-->
+                        </p:dataTable>
+
+                    </form>
                 </p:layoutUnit>
 
             </p:layout>
