@@ -1,13 +1,24 @@
 				Prime Faces
 1.What is primefaces? Host can you get primeface jar file to work with jsp?
+	Primefaces is a lightweight JSF component library with one JAR file, which needs no configuration and does not contain any required external dependencies.
+	To start with the development of the library, all we need is to get the artifact for the library.
 2.What is primefaces repository Confiq? page 8
+	
 3.What is primefaces dependency artifect?
 4.When will you use the fillowing jar file?
 		jsf, primefaces,itext, apache POI, commons_io
 5.Primedeaces provides PPR explain.
 6.What do the following keywords?
 	@this, @parent,@Form, @none, @all
+	@this:The component that triggers the PPR updated
+	@parent: The parent of the PPR trigger is updated
+	@form: The rncapsulating form of the PPR is updated
+	@none: PPR does not change the DOM with AJAZ resnonse
+	@all: The whole document is updated as in nont-AJAX requests 
 7.What is i18 an L10n?What are differents between i18 and L10n?
+	Internationalization: We are emphasizing that the web application should support multiple languages; and with Localization.
 8.Primedeaces implements own 7 headRounderses which are those?
+
+
 
 

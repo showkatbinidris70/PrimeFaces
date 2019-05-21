@@ -9,6 +9,7 @@
 /Page59/nbproject/private/
 /PrimeFaceBootstrap/nbproject/private/
 /PrimeFaceBootstrap/build/
+<<<<<<< HEAD
 /Ch5/nbproject/private/
 /Ch5/build/
 /DataTable/nbproject/private/
@@ -22,3 +23,17 @@
 /Ch1/nbproject/private/
 /Ch1/build/
 /Chapter6/nbproject/private/
+=======
+/Ch4/nbproject/private/
+/Ch4/build/
+/Chap4/nbproject/private/
+/Chap4/build/
+/Ch5/nbproject/private/
+/Ch5/build/
+/Chapter5/nbproject/private/
+/Chapter5/build/
+/Ch6/nbproject/private/
+/Ch6/build/
+/FileUplode/nbproject/private/
+/FileUplode/build/
+>>>>>>> c25bb3761661213ec3509aac1ae2bfa57221e939
