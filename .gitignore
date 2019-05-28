@@ -9,6 +9,21 @@
 /Page59/nbproject/private/
 /PrimeFaceBootstrap/nbproject/private/
 /PrimeFaceBootstrap/build/
+<<<<<<< HEAD
+/Ch5/nbproject/private/
+/Ch5/build/
+/DataTable/nbproject/private/
+/DataTable/build/
+/Paginator/nbproject/private/
+/Paginator/build/
+/Filtering/nbproject/private/
+/Filtering/build/
+/Page82/nbproject/private/
+/Page82/build/
+/Ch1/nbproject/private/
+/Ch1/build/
+/Chapter6/nbproject/private/
+=======
 /Ch4/nbproject/private/
 /Ch4/build/
 /Chap4/nbproject/private/
@@ -21,6 +36,7 @@
 /Ch6/build/
 /FileUplode/nbproject/private/
 /FileUplode/build/
+<<<<<<< HEAD
 /angulerJSGettingStarted/nbproject/private/
 /ClassTestPrimeface/nbproject/private/
 /ClassTestPrimeface/build/
@@ -28,3 +44,7 @@
 /Evidence/build/
 /ClassTest/build/
 /ClassTest/nbproject/private/
+=======
+>>>>>>> c25bb3761661213ec3509aac1ae2bfa57221e939
+/Home/nbproject/private/
+>>>>>>> c7fa1c69f58fa41aaaa7c929a5f4fa0dd1ead7f7
