@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Form</title>
+        <style>
+            .header{
+                height: 175px;
+                width: 1329px;
+                background-color: #FBFAFA;
+            }
+            .logo{
+                height: 172px;
+                width:212px;
+                border: 1px solid blue;
+                float: left;
+            }
+            .banner{
+               height: 172px;
+                width:1110px;
+                float: right;
+            }
+            .b{
+                height:608px; width: 1329px;
+                border:1px solid red;
+                background-color: #FBFAFA;
+            }
+            .b1{
+                height:600px; width: 700px;
+                border:1px solid green;
+                background-color: #FCFCFC;
+                margin-left: 300px;
+                margin-top: 5px;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="header">
+                <div class="logo">
+                    <p:graphicImage value="/images/logo.png"/> 
+                </div>
+                <div class="banner">
+                    <h1 align="center" style="font-family: Cooper Black; font-size: 40pt; color: green;" >Rupali Automobile </h1>
+                    <h2  align="center" style="font-family: Cooper Black; font-size: 20pt; color: red;" > Hotel and Resturent</h2>
+                </div>
+            </div>
+            <h1 align="center">Form Page</h1>
+            <div class="b">
+                <div class="b1">
+                    <table>
+                        <tr>
+                            <td><b>Applicant Name</b></td>
+                            <td><b>:</b></td>
+                            <td><p:inputText value="#{employees.name}" style="width:203px"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Father's Name</b></td>
+                            <td><b>:</b></td>
+                            <td><p:inputText value="#{employees.fathersName}" style="width:203px"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Mother's Name</b></td>
+                            <td><b>:</b></td>
+                            <td><p:inputText value="#{employees.mothersName}" style="width:203px"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Gender</b></td>
+                            <td><b>:</b></td>
+                            <td><p:selectOneRadio id="gender" value="#{employees.gender}" >
+                                    <f:selectItem itemLabel="Male" itemValue="Male"/>
+                                    <f:selectItem itemLabel="Female" itemValue="Female"/>
+                                </p:selectOneRadio>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Mobile Number</b></td>
+                            <td>:</td>
+                            <td><p:inputText value="#{employees.mobile}" style="width:203px"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>Date of Birth</b></td>
+                            <td><b>:</b></td>
+                            <td><p:calendar id="date"  value="#{employees.dob}" yearRange="c-40:c+0" navigator="true" /></td>
+                        </tr>
+                        <tr>
+                            <td><b>Educational Qualification</b></td>
+                            <td><b>:</b></td>
+                            <td><p:selectOneMenu value="#{employees.education}" style="width:203px">
+                                    <f:selectItem itemLabel="Educational Qulifications" itemValue=""/>
+                                    <f:selectItem itemLabel="SSC" itemValue="SSC"/>
+                                    <f:selectItem itemLabel="HSC" itemValue="HSC"/>
+                                    <f:selectItem itemLabel="B.A/BSC/B.Com" itemValue="B.A/BSC/B.Com"/>
+                                    <f:selectItem itemLabel="B.Com" itemValue="B.Com"/>
+                                    <f:selectItem itemLabel="BSC" itemValue="BSC"/>
+                                    <f:selectItem itemLabel="MA" itemValue="MA"/>
+                                    <f:selectItem itemLabel="Mcom" itemValue="Mcom"/>
+                                    <f:selectItem itemLabel="MSC" itemValue="Mcom"/>
+                                </p:selectOneMenu>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><b>Experiences</b></td>
+                            <td><b>:</b></td>
+                            <td><p:selectBooleanCheckbox>
+                                    <p:selectBooleanButton id="value1" value="#{employees.experience}" onLabel="Yes" offLabel="No" style="width:203px" />
+                                </p:selectBooleanCheckbox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Expected Post</b></td>
+                            <td><b>:</b></td>
+                            <td>
+                                <p:selectOneMenu value="#{employees.post}" style="width:203px">
+                                    <f:selectItem itemLabel="Expected Post" itemValue=""/>
+                                    <f:selectItem itemLabel="Manager" itemValue="Manager"/>
+                                    <f:selectItem itemLabel="Computer Operator" itemValue="Computer Operator"/>
+                                    <f:selectItem itemLabel="Chef" itemValue="Chef"/>
+                                    <f:selectItem itemLabel="Delivery Boy" itemValue="Delivery Boy"/>
+                                    <f:selectItem itemLabel="Cleaner" itemValue="Cleaner"/>
+                                    <f:selectItem itemLabel="Waiter" itemValue="Waiter"/>
+                                </p:selectOneMenu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Blood Group</b></td>
+                            <td><b>:</b></td>
+                            <td>
+                                <p:selectOneMenu value="#{employees.blood}"  style="width:203px">
+                                    <f:selectItem itemLabel="Select Blood Group" itemValue=""/>
+                                    <f:selectItem itemLabel="O+" itemValue="O+"/>
+                                    <f:selectItem itemLabel="O-" itemValue="O-"/>
+                                    <f:selectItem itemLabel="A+" itemValue="A+"/>
+                                    <f:selectItem itemLabel="A-" itemValue="A-"/>
+                                    <f:selectItem itemLabel="AB+" itemValue="AB+"/>
+                                    <f:selectItem itemLabel="AB-" itemValue="AB-"/>
+                                    <f:selectItem itemLabel="B+"  itemValue="B+"/>
+                                    <f:selectItem itemLabel="B-"  itemValue="B-"/>
+                                </p:selectOneMenu>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Religion</b></td>
+                            <td><b>:</b></td>
+                            <td>
+                                <p:selectOneMenu value="#{employees.religion}" style="width:203px">
+                                    <f:selectItem itemLabel="Select Religion" itemValue=""/>
+                                    <f:selectItem itemLabel="Muslim" itemValue="Muslim"/>
+                                    <f:selectItem itemLabel="Hindu" itemValue="Hindu"/>
+                                    <f:selectItem itemLabel="Chirstian" itemValue="Chirstian"/>
+                                    <f:selectItem itemLabel="Others" itemValue="Others"/>
+                                </p:selectOneMenu>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Marital Status</b></td>
+                            <td><b>:</b></td>
+                            <td>
+                                <p:selectOneRadio value="#{employees.marital}" style="width:203px" >
+                                    <f:selectItem itemLabel="Marrid" itemValue="Married" />
+                                    <f:selectItem itemLabel="Unamrried" itemValue="Unmarried" />
+                                    <f:selectItem itemLabel="Devorced" itemValue="Devorced" />
+                                </p:selectOneRadio>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h:commandButton value="Submit" action="confirm.xhtml" actionListener="#{employees.save()}" style="width:203px"/>
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div> 
+        </h:form>
+
+    </h:body>
+</html>
+

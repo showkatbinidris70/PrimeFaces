@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+    <h:head>
+        <title>Breakfast page</title>
+        <style>
+            .header{
+                height: 175px;
+                width: 1329px;
+                background-color: #FBFAFA;
+            }
+            .logo{
+                height: 172px;
+                width:212px;
+                border: 1px solid blue;
+                float: left;
+            }
+            .banner{
+                height: 172px;
+                width:1110px;
+                float: right;
+            }
+            .b{
+                height:808px; width: 1327px;
+                border:1px solid red;
+                background-color: #FBFAFA;
+            }
+            .b1{
+                height:400px; width: 1325px;
+                border:1px solid black;  
+            }
+            .b1-sub{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+            .b1-sub2{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+            .b1-sub3{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+            .b2{
+                margin-top: 1px;
+                height:401px; width: 1325px;
+                border:1px solid black;  
+            }
+            .b2-sub{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+            .b2-sub2{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+            .b2-sub3{
+                margin-left: 1px;
+                height:399px; width: 438px;
+                border:1px solid blue; 
+                float: left;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:growl id="messages"/>
+            <div class="header">
+                <div class="logo">
+                    <p:graphicImage value="/images/logo.png"/> 
+                </div>
+                <div class="banner">
+                    <h1 align="center" style="font-family: Cooper Black; font-size: 40pt; color: green;" >Rupali Automobile</h1>
+                    <h2  align="center" style="font-family: Cooper Black; font-size: 20pt; color: red;" > Hotel and Resturent</h2>
+                </div>
+            </div>
+           <p:menubar>
+                <p:submenu label="Food Menu" icon="pi pi-file">
+                    <p:submenu label="Choose Menu" icon="pi pi-briefcase">
+                        <p:menuitem value="Morning Breakfast" url="breakfast.xhtml" />
+                        <p:menuitem value="Launch" url="launch.xhtml"/>
+                        <p:menuitem value="Dinner" url="dinner.xhtml"/>
+                        <p:menuitem value="Refreshment" url="refreshment.xhtml"/>
+                        <p:menuitem value="Coffie" url="Coffie.xhtml"></p:menuitem>
+                        <p:menuitem value="Tea" url="Tea.xhtml"></p:menuitem>
+                    </p:submenu>
+                </p:submenu>
+
+                <p:submenu label="Notice" icon="pi pi-pencil">
+                    <p:menuitem value="Special Offer" url="#"  />
+                    <p:menuitem value="Upcomming Foods" url="#" />
+                    <p:menuitem value="Jobs Circuller" url="circuller.xhtml"  />
+                </p:submenu>
+
+                <p:submenu label="About Us" >
+                    <p:menuitem value="Contact Us" url="#" />
+                    <p:menuitem value="Our Branchs" url="#" />
+                    <p:submenu label="Head Branch" />
+                    <p:submenu label="Banani Branch" />
+                    <p:submenu label="Gulshan Branch" />
+                    <p:submenu label="Dhanmondi Branch" />
+                </p:submenu>
+
+                <p:menuitem value="Carrier" url="circuller.xhtml"  />
+
+                <p:menuitem value="Home" url="index.xhtml" />
+
+                <f:facet name="options">
+                    <p:inputText style="margin:1px 10px 1px 1px;" placeholder="Search"/>
+                    <p:commandButton type="button" value="Login" icon="pi pi-home" />
+                </f:facet>
+            </p:menubar>
+            <h1 align="center"> Dinner List </h1>
+
+            <div class="b">
+                <div class="b1">
+                    <div class="b1-sub">
+                        <p:graphicImage value="/images/ruti5.jpg" /> 
+                    </div>
+                    <div class="b1-sub2">
+                        <p:graphicImage value="/images/porata.jpg" /> 
+                    </div>
+                    <div class="b1-sub3">
+                        <p:graphicImage value="/images/ruti.jfif" /> 
+                    </div>
+                </div>
+                <div class="b2">
+                    <div class="b2-sub">
+                        <p:graphicImage value="/images/ruti5.jpg" /> 
+                    </div>
+                    <div class="b2-sub2">
+                        <p:graphicImage value="/images/ruti4.jfif" /> 
+                    </div>
+                    <div class="b2-sub3">
+                        <p:graphicImage value="/images/bread.jpg" /> 
+                    </div>
+                </div>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

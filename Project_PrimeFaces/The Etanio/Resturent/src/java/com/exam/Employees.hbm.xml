@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2019 12:32:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Employees" table="employees" catalog="resturent">
+        <id name="mobile" type="string">
+            <column name="mobile" length="45" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="30" not-null="true" />
+        </property>
+        <property name="fathersName" type="string">
+            <column name="fathersName" length="45" />
+        </property>
+        <property name="mothersName" type="string">
+            <column name="mothersName" length="45" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="dob" type="date">
+            <column name="dob" length="10" />
+        </property>
+        <property name="education" type="string">
+            <column name="education" length="45" />
+        </property>
+        <property name="experience" type="string">
+            <column name="experience" length="45" />
+        </property>
+        <property name="post" type="string">
+            <column name="post" length="45" />
+        </property>
+        <property name="blood" type="string">
+            <column name="blood" length="45" />
+        </property>
+        <property name="religion" type="string">
+            <column name="religion" length="45" />
+        </property>
+        <property name="marital" type="string">
+            <column name="marital" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

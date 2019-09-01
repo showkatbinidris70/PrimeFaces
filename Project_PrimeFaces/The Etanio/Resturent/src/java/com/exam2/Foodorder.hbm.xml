@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2019 1:07:18 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam2.Foodorder" table="foodorder" catalog="resturent" optimistic-lock="version">
+        <id name="phone" type="string">
+            <column name="phone" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="45" />
+        </property>
+        <property name="time" type="string">
+            <column name="time" length="45" />
+        </property>
+        <property name="food" type="string">
+            <column name="food" length="45" />
+        </property>
+        <property name="quantity" type="string">
+            <column name="quantity" length="45" />
+        </property>
+        <property name="date" type="string">
+            <column name="date" length="45" />
+        </property>
+        <property name="amount" type="java.lang.Double">
+            <column name="amount" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
