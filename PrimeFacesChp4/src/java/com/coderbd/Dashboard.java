@@ -3,12 +3,12 @@ package com.coderbd;
 
 
 public class Dashboard {
-     private String dashboardTitle="Admin Dahsboard";
-    private  double todaySales=50000.0;
-    private  double weeklyAvgSales=70000.0;
-    private  double  lastMonthSales= 1800000.0;
-    private  String mostPurchaseCustomer="Mr.AAAAA";
-    private int noOfProductsInShop=380;
+    private String dashboardTitle = "Admin Dahsboard";
+    private double todaySales = 50000.0;
+    private double weeklyAvgSales = 70000.0;
+    private double lastMonthSales = 1800000.0;
+    private String mostPurchaseCustomer = "Mr.AAAAA";
+    private int noOfProductsInShop = 380;
 
     public String getDashboardTitle() {
         return dashboardTitle;
@@ -60,7 +60,6 @@ public class Dashboard {
 
     public Dashboard() {
     }
-    
-    
+
 
 }

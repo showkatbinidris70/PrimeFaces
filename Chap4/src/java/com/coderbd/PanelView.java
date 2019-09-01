@@ -8,11 +8,11 @@ package com.coderbd;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
+
 import org.primefaces.event.CloseEvent;
 import org.primefaces.event.ToggleEvent;
 
 /**
- *
  * @author User
  */
 @ManagedBean

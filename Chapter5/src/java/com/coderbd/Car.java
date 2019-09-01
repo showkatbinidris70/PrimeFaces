@@ -20,6 +20,6 @@ public class Car {
     public String getCarDetails() {
         return carDetails;
     }
-    
+
 
 }

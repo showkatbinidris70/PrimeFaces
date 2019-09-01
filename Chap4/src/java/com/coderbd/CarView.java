@@ -8,13 +8,12 @@ package com.coderbd;
 import javax.faces.bean.ManagedBean;
 
 /**
- *
  * @author User
  */
 @ManagedBean
 public class CarView {
-  private String carName = "Mahindra";
-  private String carDetails = "It is a name of Tractor";
+    private String carName = "Mahindra";
+    private String carDetails = "It is a name of Tractor";
 
     public String getCarName() {
         return carName;
@@ -31,6 +30,6 @@ public class CarView {
     public void setCarDetails(String carDetails) {
         this.carDetails = carDetails;
     }
-  
-  
+
+
 }

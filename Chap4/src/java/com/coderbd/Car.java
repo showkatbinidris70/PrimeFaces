@@ -8,7 +8,6 @@ package com.coderbd;
 import javax.faces.bean.ManagedBean;
 
 /**
- *
  * @author User
  */
 @ManagedBean
@@ -33,7 +32,5 @@ public class Car {
         return carDetails;
     }
 
-    
-    
 
 }

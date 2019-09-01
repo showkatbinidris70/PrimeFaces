@@ -6,9 +6,8 @@
 package com;
 
 /**
- *
  * @author User
  */
 public class coderbd {
-    
+
 }

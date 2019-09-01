@@ -5,7 +5,7 @@ import javax.faces.bean.ManagedBean;
 
 @ManagedBean
 public class MaskView {
-     
+
     private String name;
 
     public MaskView() {
@@ -18,5 +18,5 @@ public class MaskView {
     public void setName(String name) {
         this.name = name;
     }
-   
+
 }

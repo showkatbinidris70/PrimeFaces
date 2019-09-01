@@ -8,7 +8,6 @@ package com.coderbd;
 import javax.faces.bean.ManagedBean;
 
 /**
- *
  * @author User
  */
 @ManagedBean
@@ -51,5 +50,5 @@ public class MaskView {
         this.txt1 = txt1;
     }
 
-    
+
 }

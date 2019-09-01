@@ -36,7 +36,7 @@ public class BusController {
         this.selectedBus = selectedBus;
     }
 
-   
+
 // public void onRowSelect(SelectEvent event) {
 //        FacesMessage msg = new FacesMessage("Bus Selected", ((Bus) event.getObject()).getId());
 //        FacesContext.getCurrentInstance().addMessage(null, msg);

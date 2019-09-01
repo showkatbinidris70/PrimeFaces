@@ -6,13 +6,12 @@
 package com.coderbd;
 
 /**
- *
  * @author User
  */
 public class Dashboard {
     private String dashboardTitle = "Admin Dash Borad";
     private double todaySales = 50000.0;
-    private double weeklyAvgSales= 70000.0;
+    private double weeklyAvgSales = 70000.0;
     private double lastMonthSales = 1800000.0;
     private int totalNoOfCustomers = 25000;
     private String noStPurchaseCustomer = "Mr.AAAAAAA";
@@ -45,6 +44,6 @@ public class Dashboard {
     public int getNoOfProduct() {
         return noOfProduct;
     }
-    
-    
+
+
 }

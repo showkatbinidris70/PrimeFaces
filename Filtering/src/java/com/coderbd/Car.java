@@ -6,7 +6,6 @@
 package com.coderbd;
 
 /**
- *
  * @author User
  */
 public class Car {
@@ -78,5 +77,5 @@ public class Car {
         this.soldState = soldState;
     }
 
-   
+
 }

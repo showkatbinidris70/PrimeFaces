@@ -8,13 +8,12 @@ package com;
 import java.util.Date;
 
 /**
- *
  * @author User
  */
 public class Car {
     //       list.add(new Car(getRandomId(), getRandomBrand(), 
     //getRandomYear(), getRandomColor(), getRandomPrice(), getRandomSoldState()));
-      
+
     private String randomId;
     private String randomBrand;
     private int randomYear;
@@ -82,6 +81,5 @@ public class Car {
         this.randomSoldState = randomSoldState;
     }
 
-    
-  
+
 }

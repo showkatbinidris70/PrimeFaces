@@ -5,75 +5,77 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 
-    <f:view contentType="text/html">
-        <h:head>
-            <f:facet name="first">
-                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-                <title>PrimeFaces</title>
-            </f:facet>
-        </h:head>
+<f:view contentType="text/html">
+    <h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <title>PrimeFaces</title>
+        </f:facet>
+    </h:head>
 
-        <h:body>
+    <h:body>
 
-            <p:layout fullPage="true">
+        <p:layout fullPage="true">
 
-                <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
-                    Header
-                </p:layoutUnit>
+            <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                Header
+            </p:layoutUnit>
 
-                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
-                    Footer
-                </p:layoutUnit>
+            <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                Footer
+            </p:layoutUnit>
 
-                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
-                    <p:menu>
-                        <p:submenu label="Resources">
-                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
-                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
-                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+            <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
+                <p:menu>
+                    <p:submenu label="Resources">
+                        <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf"/>
+                        <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html"/>
+                        <p:menuitem value="Forum" url="http://forum.primefaces.org/"/>
+                        <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html"/>
 
-                        </p:submenu>
+                    </p:submenu>
 
-                    </p:menu>
-                </p:layoutUnit>
+                </p:menu>
+            </p:layoutUnit>
 
-                <p:layoutUnit position="center">
-                    Welcome to PrimeFaces
-                    <p:panel id="closeableToggleable" header="Primefaces" footer="The Cookbook"  closable="true" toggleable="true" toggleSpeed="1000">
-                        <h:outputText value="open Source Primefaces is the leading JSF Component Suite in the industry"/>
-                    </p:panel>
-                    <hr/>
-                     <p:panel id="panelWithMenu" header="Primefaces" footer="The Cookbook" widgetVar="panel" closable="true" toggleable="true" toggleSpeed="1000">
-                        <h:outputText value="open Source Primefaces is the leading JSF Component Suite in the industry"/>
-                        <f:facet name="options">
-                            <p:menu>
-                                <p:submenu label="Setting">
-                                    <p:menuitem value="Toggle" url="#" icon="ui-icon-newwin" onclick="panel.toggle()"/>
-                                    <p:menuitem value="Remove" url="#" icon="ui-icon-newwin" onclick="panel.close()"/>
-                                </p:submenu>
-                            </p:menu>
-                        </f:facet>
-                    </p:panel>
-                    <hr/>
-                    <p:panelGrid columns="2">
-                        <f:facet name="header">User Information</f:facet>
-                        <h:outputLabel for="firstname" value="First Name"/>
-                        <p:inputText id="firstname" value="" label="firstname"/>
-                       
-                         <h:outputLabel for="lastname" value="Last Name"/>
-                         <p:inputText id="lastname" value="" required="true" label="firstname"/>
-                   
-                         <f:facet name="footer">
-                             <p:commandButton type="button" value="save" icon="ui-icon-check" style="margin: 0"/>
-                         </f:facet>
-                    </p:panelGrid>
-                </p:layoutUnit>
+            <p:layoutUnit position="center">
+                Welcome to PrimeFaces
+                <p:panel id="closeableToggleable" header="Primefaces" footer="The Cookbook" closable="true"
+                         toggleable="true" toggleSpeed="1000">
+                    <h:outputText value="open Source Primefaces is the leading JSF Component Suite in the industry"/>
+                </p:panel>
+                <hr/>
+                <p:panel id="panelWithMenu" header="Primefaces" footer="The Cookbook" widgetVar="panel" closable="true"
+                         toggleable="true" toggleSpeed="1000">
+                    <h:outputText value="open Source Primefaces is the leading JSF Component Suite in the industry"/>
+                    <f:facet name="options">
+                        <p:menu>
+                            <p:submenu label="Setting">
+                                <p:menuitem value="Toggle" url="#" icon="ui-icon-newwin" onclick="panel.toggle()"/>
+                                <p:menuitem value="Remove" url="#" icon="ui-icon-newwin" onclick="panel.close()"/>
+                            </p:submenu>
+                        </p:menu>
+                    </f:facet>
+                </p:panel>
+                <hr/>
+                <p:panelGrid columns="2">
+                    <f:facet name="header">User Information</f:facet>
+                    <h:outputLabel for="firstname" value="First Name"/>
+                    <p:inputText id="firstname" value="" label="firstname"/>
 
-            </p:layout>
+                    <h:outputLabel for="lastname" value="Last Name"/>
+                    <p:inputText id="lastname" value="" required="true" label="firstname"/>
 
-        </h:body>
+                    <f:facet name="footer">
+                        <p:commandButton type="button" value="save" icon="ui-icon-check" style="margin: 0"/>
+                    </f:facet>
+                </p:panelGrid>
+            </p:layoutUnit>
 
-    </f:view>
+        </p:layout>
+
+    </h:body>
+
+</f:view>
 </html>
 

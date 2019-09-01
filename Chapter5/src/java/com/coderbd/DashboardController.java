@@ -8,9 +8,9 @@ public class DashboardController {
     private Dashboard dashboard;
 
     public Dashboard getDashboard() {
-        if(dashboard == null ){
-        dashboard = new Dashboard();
-        dashboard.setDashboardTitle("ATM Mobile Shop");
+        if (dashboard == null) {
+            dashboard = new Dashboard();
+            dashboard.setDashboardTitle("ATM Mobile Shop");
         }
         return dashboard;
     }

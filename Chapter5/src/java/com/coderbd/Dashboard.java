@@ -66,6 +66,5 @@ public class Dashboard {
         this.noOfProuductsInShop = noOfProuductsInShop;
     }
 
-   
 
 }

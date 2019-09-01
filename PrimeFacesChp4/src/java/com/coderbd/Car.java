@@ -1,8 +1,6 @@
 package com.coderbd;
 
 
-
-
 public class Car {
 
     private String carName;
@@ -16,10 +14,9 @@ public class Car {
         this.carDetails = carDetails;
     }
 
-    
-    
+
     public String getCarName() {
-        
+
         return carName;
     }
 

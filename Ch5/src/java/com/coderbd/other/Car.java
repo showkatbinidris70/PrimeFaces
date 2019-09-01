@@ -11,7 +11,6 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedProperty;
 
 /**
- *
  * @author User
  */
 public class Car implements Serializable {

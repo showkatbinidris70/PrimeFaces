@@ -13,7 +13,6 @@ import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 
 /**
- *
  * @author User
  */
 @ManagedBean(name = "carService")
@@ -53,8 +52,8 @@ public class CarService {
     public List<Car> createCars(int size) {
         List<Car> list = new ArrayList<Car>();
         for (int i = 0; i < size; i++) {
-             list.add(new Car(getRandomId(), getRandomBrand(), getRandomYear(), getRandomColor(), getRandomPrice(), getRandomSoldState()));
-           // list.add(new Car(getRandomId(), getRandomBrand(), getRandomYear(), getRandomColor(), getRandomPrice(), getRandomSoldState()));
+            list.add(new Car(getRandomId(), getRandomBrand(), getRandomYear(), getRandomColor(), getRandomPrice(), getRandomSoldState()));
+            // list.add(new Car(getRandomId(), getRandomBrand(), getRandomYear(), getRandomColor(), getRandomPrice(), getRandomSoldState()));
         }
 
         return list;

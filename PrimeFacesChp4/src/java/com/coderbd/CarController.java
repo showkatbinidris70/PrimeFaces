@@ -7,7 +7,7 @@ import javax.faces.bean.ManagedBean;
 
 @ManagedBean
 public class CarController {
-  List<Car> cars;
+    List<Car> cars;
 
     public List<Car> getCars() {
         cars = new ArrayList<>();
@@ -19,7 +19,6 @@ public class CarController {
     public void setCars(List<Car> cars) {
         this.cars = cars;
     }
-  
-  
-    
+
+
 }

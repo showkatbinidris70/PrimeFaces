@@ -5,89 +5,93 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:p="http://primefaces.org/ui">
 
-    <f:view contentType="text/html">
-        <h:head>
-            <f:facet name="first">
-                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-                <title>PrimeFaces</title>
-            </f:facet>
-            <style type="text/css"/>
-            .row{
-            width: 100%;
-            height:auto;
-            }
-            .col{
-            width:32.31%;
-            height:200px;
-            float: left;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            }
-            .h1{
-            color:green;
-            font-weight:900;
-            text-align:center;
-            padding:5px 15px;
-            }
-            .h2{
-            font-weight:900;
-            text-align:center;
-            font-size:50px;
-            padding:5px 15px;
-            }
+<f:view contentType="text/html">
+    <h:head>
+        <f:facet name="first">
+            <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+            <title>PrimeFaces</title>
+        </f:facet>
+        <style type="text/css"/>
+        .row{
+        width: 100%;
+        height:auto;
+        }
+        .col{
+        width:32.31%;
+        height:200px;
+        float: left;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        }
+        .h1{
+        color:green;
+        font-weight:900;
+        text-align:center;
+        padding:5px 15px;
+        }
+        .h2{
+        font-weight:900;
+        text-align:center;
+        font-size:50px;
+        padding:5px 15px;
+        }
 
-        </h:head>
+    </h:head>
 
-        <h:body>
+    <h:body>
 
-            <p:layout fullPage="true">
+        <p:layout fullPage="true">
 
-                <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
-                    Header
-                </p:layoutUnit>
+            <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                Header
+            </p:layoutUnit>
 
-                <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
-                    Footer
-                </p:layoutUnit>
+            <p:layoutUnit position="south" size="100" closable="true" collapsible="true">
+                Footer
+            </p:layoutUnit>
 
-                <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
-                    <p:menu>
-                        <p:submenu label="Resources">
-                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
-                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
-                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
+            <p:layoutUnit position="west" size="175" header="Left" collapsible="true">
+                <p:menu>
+                    <p:submenu label="Resources">
+                        <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf"/>
+                        <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html"/>
+                        <p:menuitem value="Forum" url="http://forum.primefaces.org/"/>
+                        <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html"/>
 
-                        </p:submenu>
+                    </p:submenu>
 
-                    </p:menu>
-                </p:layoutUnit>
+                </p:menu>
+            </p:layoutUnit>
 
-                <p:layoutUnit position="center">
+            <p:layoutUnit position="center">
 
-               <div class="row">
-                        <div class="col">
-                            <h1 class="h1">Today's Sales</h1>
-                            <h2 class="h2"><h:outputText value="#{dahsboardController.dashboard.todaySales}"</h2>
-                        </div>
-                        <div class="col">
-                            <h1 class="h1">Last Month Sales</h1>
-                            <h2 class="h2"><h:outputText value="#{dahsboardController.dashboard.lastMonthSales}"</h2>
-                        </div>
-                        <div class="col">
-                            <h1 class="h1">Weekly avg Sales</h1>
-                            <h2 class="h2"><h:outputText value="#{dahsboardController.dashboard.weeklyAvgSales}"</h2>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="h1">Today's Sales</h1>
+                        <h2 class="h2">
+                            <h:outputText value="#{dahsboardController.dashboard.todaySales}"
+                        </h2>
                     </div>
-                 
+                    <div class="col">
+                        <h1 class="h1">Last Month Sales</h1>
+                        <h2 class="h2">
+                            <h:outputText value="#{dahsboardController.dashboard.lastMonthSales}"
+                        </h2>
+                    </div>
+                    <div class="col">
+                        <h1 class="h1">Weekly avg Sales</h1>
+                        <h2 class="h2">
+                            <h:outputText value="#{dahsboardController.dashboard.weeklyAvgSales}"
+                        </h2>
+                    </div>
+                </div>
 
-                 
-                  
-                </p:layoutUnit>
 
-            </p:layout>
+            </p:layoutUnit>
 
-        </h:body>
+        </p:layout>
 
-    </f:view>
+    </h:body>
+
+</f:view>
 </html>

@@ -10,7 +10,6 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 
 /**
- *
  * @author User
  */
 @ManagedBean
@@ -41,7 +40,7 @@ public class BusController {
         this.selectedBus = selectedBus;
     }
 
-    
+
     public void setBusList(List<Bus> busList) {
         this.busList = busList;
     }
@@ -54,5 +53,5 @@ public class BusController {
         this.busDetails = busDetails;
     }
 
-    
+
 }

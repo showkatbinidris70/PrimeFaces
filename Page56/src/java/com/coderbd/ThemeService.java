@@ -12,15 +12,14 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ApplicationScoped;
 
 /**
- *
  * @author User
  */
 @ManagedBean()
 @ApplicationScoped
 public class ThemeService {
-     
+
     private List<Theme> themes;
-     
+
     @PostConstruct
     public void init() {
         themes = new ArrayList<>();
@@ -33,8 +32,8 @@ public class ThemeService {
         themes.add(new Theme(6, "Luna-Pink", "luna-pink"));
         themes.add(new Theme(7, "Omega", "omega"));
     }
-     
+
     public List<Theme> getThemes() {
         return themes;
-    } 
+    }
 }
